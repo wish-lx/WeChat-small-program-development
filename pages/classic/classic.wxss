@@ -1,0 +1,14 @@
+.chunk{
+  display:inline-block;
+  width: 100px;
+  height: 100px;
+}
+.color1{
+  background-color: red;
+}
+.color2{
+  background-color: blue;
+}
+.color3{
+  background-color: green;
+}
