@@ -1,4 +1,11 @@
 .container{
+  
+}
+.container image{
   width:32rpx;
   height:28rpx;
+}
+.container text{
+  font-size:24rpx;
+  color:#bbbbbb;
 }
