@@ -18,6 +18,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onLike:function(e){
+      console.log(e)
+    }
   }
 })
