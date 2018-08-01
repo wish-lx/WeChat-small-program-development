@@ -17,7 +17,7 @@ Page({
       header: {
         appkey:"8dkZ01Sgxs4hIflV"
       },
-      success: function(res) {
+      success: (res) => {
         console.log(res)
       }
     })
