@@ -1,26 +1,32 @@
-// pages/classic/classic.js
+import { ClassicModel } from '../../modules/classic.js'
+let ClassicModel = new ClassicModel()
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url:'http://bl.7yue.pro/v1/classic/latest',
-      header: {
-        appkey:"8dkZ01Sgxs4hIflV"
-      },
-      success: (res) => {
-        console.log(res)
-      }
+    ClassicModel.getLatest((res) => {
+
     })
+    // wx.request({
+    //   url:'http://bl.7yue.pro/v1/classic/latest',
+    //   header: {
+    //     appkey:"8dkZ01Sgxs4hIflV"
+    //   },
+    //   success: (res) => {
+    //     console.log(res)
+    //   }
+    // })
   },
 
   /**
