@@ -1,5 +1,5 @@
-import { ClassicModel } from '../../modules/classic.js'
-let ClassicModel = new ClassicModel()
+import {ClassicModel} from '../../modules/classic.js'
+let classicModel = new ClassicModel()
 
 
 Page({
@@ -15,8 +15,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    ClassicModel.getLatest((res) => {
-
+    classicModel.getLatest((res) => {
+      
     })
     // wx.request({
     //   url:'http://bl.7yue.pro/v1/classic/latest',
