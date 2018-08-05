@@ -16,7 +16,7 @@ Page({
    */
   onLoad: function (options) {
     classicModel.getLatest((res) => {
-      
+      console.log(res)
     })
     // wx.request({
     //   url:'http://bl.7yue.pro/v1/classic/latest',
