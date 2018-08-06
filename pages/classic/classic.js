@@ -16,7 +16,6 @@ Page({
    */
   onLoad: function (options) {
     classicModel.getLatest((res) => {
-      console.log(res)
       this.setData({
         classicData: res
       })
